@@ -10,9 +10,6 @@ import Cookies from "universal-cookie";
 function Header() {
   // client
   const { auth, setAuth } = useAuth();
-  useEffect(() => {
-    console.log("auth : ", auth);
-  }, [auth]);
 
   // server
   /* const auth = await getAuthFromServer();
@@ -42,7 +39,7 @@ function Header() {
           src={Logo}
           alt="Authify logo"
           className="rounded-xl"
-          style={{ width: "20%", height: "20%" }}
+          style={{ width: "12%", height: "12%" }}
         />
       </Link>
       <div className="flex gap-4 max-h-[40px]">
